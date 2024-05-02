@@ -1,0 +1,82 @@
+/* Contact Section Start */
+.contact iframe {
+  width: 100%;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 40px 0;
+}
+
+.info {
+  width: 50%;
+  margin-top: -50px;
+}
+
+.form {
+  width: 100%;
+  margin-right: -30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.address {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0 20px 0;
+}
+
+.address h4 {
+  font-size: 22px;
+  font-weight: 550;
+}
+
+.address i {
+  color: var(--third-color);
+  background-color: var(--tenth-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.address i:hover {
+  color: var(--primary-color);
+  background-color: var(--third-color);
+}
+
+.address address {
+  padding: 5px 0 5px 0;
+}
+
+input {
+  height: 44px;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+  border: 1px solid #cccc;
+  width: 45%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 10px 5px 10px 10px;
+}
+
+.subject {
+  width: 93%;
+}
+
+textarea {
+  height: 60px;
+  width: 93%;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+  border: 1px solid #cccc;
+  margin-left: 20px;
+  padding: 10px 5px 10px 5px;
+  margin-right: -40px;
+}
+/* Contact Section End */

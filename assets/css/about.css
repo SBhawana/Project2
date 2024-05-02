@@ -1,0 +1,183 @@
+/* About start */
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-image {
+  width: 30%;
+}
+
+.about-image img {
+  width: 100%;
+}
+
+.about-text {
+  width: 70%;
+}
+
+.about-text h2 {
+  color: var(--fifth-color);
+  padding: 0px 25px;
+  font-size: 26px;
+}
+
+.about-text p {
+  color: var(--ninth-color);
+  font-size: 16px;
+  padding: 20px 25px;
+}
+
+.about-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-detail ul li {
+  padding: 10px 25px;
+}
+
+.about-detail ul li strong {
+  color:  var(--ninth-color);
+  font-size: 18px;
+}
+/* About End */
+
+/* Skills Start */
+.progress-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.progress-content{
+  width: 50%;
+  padding: 10px;
+}
+.progressbar-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.progressbar{
+  padding: 10px;
+}
+.progressbar-line1{
+  height: 10px;
+  width: 100%;
+  background-color: var(--third-color);
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 1;
+}
+.progressbar-line2{
+  height: 10px;
+  width: 80%;
+  background-color: var(--third-color);
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 1;
+}
+.progressbar-line3{
+  height: 10px;
+  width: 90%;
+  background-color: var(--third-color);
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 1;
+}
+.progressbar-line4{
+  height: 10px;
+  width: 90%;
+  background-color: var(--third-color);
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 1;
+}
+.progressbar-line5{
+  height: 10px;
+  width: 75%;
+  background-color: var(--third-color);
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 1;
+}
+.progressbar-line6{
+  height: 10px;
+  width: 55%;
+  background-color: var(--third-color);
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 1;
+}
+@keyframes progress {
+  0%{
+    width: 0%;
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+/* Skills End */
+
+/* Counter Start*/
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px 10px 110px;
+}
+.counter-content p {
+  font-size: 52px !important;
+  color: var(--eight-color);
+  font-weight: 400;
+}
+
+.counter-content h4 {
+  color: var(--secondary-color);
+  font-weight: 300;
+  text-align: center;
+  padding: 10px;
+}
+/* Counter End */
+
+/* Testimonial Start */
+.testimonial-wrapper .splide__pagination__page {
+  background: var(--primary-color);
+  border: 1px solid var(--third-color);
+  height: 12px;
+  width: 12px;
+}
+
+.testimonial-wrapper .splide__pagination__page.is-active {
+  background: var(--third-color);
+  width: 10px;
+  height: 10px;
+}
+
+.space {
+  padding-bottom: 50px;
+}
+.testimonial-box {
+  text-align: center;
+}
+.testimonial-box > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.testimonial-box h4 {
+  padding: 20px 0 0 0;
+  font-size: 22px;
+}
+
+.testimonial-box p {
+  padding: 5px;
+}
+
+.testimonial-text {
+  padding: 20px 120px 40px 150px;
+  font-style: italic;
+  line-height: 1.8rem;
+  font-size: 17px;
+}
+.testimonial-text i {
+  font-size: 26px;
+  color: var(--third-color);
+}
+/* Testimonial End */

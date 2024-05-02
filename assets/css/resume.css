@@ -1,0 +1,72 @@
+/* RESUME START */
+.resume-wrapper {
+  display: flex;
+  justify-content: center;
+  animation: above 1s ease-in top;
+  padding: 20px 0 50px 0;
+}
+.left-content p {
+  padding-top: 20px;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+.resume-left {
+  width: 50%;
+}
+.resume-right {
+  width: 50%;
+}
+.resume-wrapper h3 {
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.resume-wrapper h4 {
+  color: var(--eleventh-color);
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.year-btn {
+  background-color: var(--tenth-color);
+  border: 0;
+  color: var(--third-color);
+  padding: 6px 16px;
+  font-size: 16px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+.left-content {
+  padding: 0 5px 0px 18px;
+  border-left: 2px solid var(--third-color);
+  position: relative;
+}
+.left-content::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: 2px solid var(--third-color);
+  top: 0px;
+  margin-left: -2px;
+  left: -1%;
+}
+.edu {
+  padding-top: 20px;
+}
+.left-content em {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.left-content ul {
+  list-style-type: disc;
+  padding: 20px;
+  font-size: 17px;
+  line-height: 20px;
+}
+.left-content ul li {
+  padding: 8px;
+}
+/* RESUME END */

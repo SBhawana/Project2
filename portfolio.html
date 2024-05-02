@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Bhawana Portfolio</title>
+
+    <!-- Font Awesome Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <div class="header">
+        <div class="logo">
+          <h2>KELLY</h2>
+        </div>
+        <div class="header-content">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="mobile-content" id="myLinks">
+          <ul>
+            <div class="logo"><h2>KELLY</h2></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div id="close-icon"><i class="fa-solid fa-x"></i></div>
+        </div>
+        <div class="social-icon">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li id="toggle-icon">
+              <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Portfolio Content Start -->
+    <section>
+      <div class="container">
+        <div class="heading">
+          <h1 class="heading-design">PORTFOLIO</h1>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+        <div class="portfolio">
+          <div class="btn-group">
+            <button data-filter="*" class="active-btn">All</button>
+            <button data-filter=".app">App</button>
+            <button data-filter=".card">Card</button>
+            <button data-filter=".web">Web</button>
+          </div>
+          <div class="grid">
+            <div class="grid-item app">
+              <img src="./assets/image/portfolio/portfolio-1.jpg" alt="" />
+              <div class="hover-section">
+                <h4>App</h4>
+                <i>App</i><br>
+                <span>+</span>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="grid-item web">
+              <img src="./assets/image/portfolio/portfolio-2.jpg" alt="" />
+            </div>
+            <div class="grid-item app">
+              <img src="./assets/image/portfolio/portfolio-3.jpg" alt="" />
+            </div>
+            <div class="grid-item card">
+              <img src="./assets/image/portfolio/portfolio-4.jpg" alt="" />
+            </div>
+            <div class="grid-item web">
+              <img src="./assets/image/portfolio/portfolio-5.jpg" alt="" />
+            </div>
+            <div class="grid-item app">
+              <img src="./assets/image/portfolio/portfolio-6.jpg" alt="" />
+            </div>
+            <div class="grid-item card">
+              <img src="./assets/image/portfolio/portfolio-7.jpg" alt="" />
+            </div>
+            <div class="grid-item card">
+              <img src="./assets/image/portfolio/portfolio-8.jpg" alt="" />
+            </div>
+            <div class="grid-item web">
+              <img src="./assets/image/portfolio/portfolio-9.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Content End -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="footer">
+        <div class="Copyright">
+          © Copyright <b>Kelly</b>. All Rights Reserved
+        </div>
+        <div class="designed">Designed by <span>BootstrapMade</span></div>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </footer>
+    <!-- Footer end -->
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+      const elem = document.querySelector(".grid");
+      const iso = new Isotope(elem, {
+        // options
+        itemSelector: ".grid-item",
+      });
+
+      const bnGroup = document.querySelectorAll(".btn-group button");
+      bnGroup.forEach((element) => {
+        element.addEventListener("click", function () {
+          bnGroup.forEach(function (el) {
+            el.classList.remove('active-btn')
+          });
+          element.classList.add("active-btn");
+          const filter = element.getAttribute("data-filter");
+          iso.arrange({ filter: filter });
+        });
+      });
+    </script>
+  </body>
+</html>

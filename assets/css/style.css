@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --third-color: #34b7a7;
+  --forth-color: #6f6f6f;
+  --fifth-color: #555555;
+  --sixth-color: #e9e8e6;
+  --seventh-color: #888888;
+  --eight-color: #49cbbb;
+  --ninth-color:#444;
+  --tenth-color:#effbf9;
+  --eleventh-color: #1d685f;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  display: inline-block;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.active {
+  color: var(--secondary-color) !important;
+  font-size: 16px !important;
+  position: relative;
+}
+.heading{
+  padding-top: 30px;
+}
+
+.heading h1 {
+  font-size: 32px;
+  position: relative;
+  text-align: center;
+}
+.heading p {
+  font-size: 17px;
+  padding: 25px 0 25px 0;
+  text-align: center;
+}
+.heading-design::before {
+  content: "";
+  position: absolute;
+  top:140%;
+  left: 48%;
+  width: 4%;
+  height: 3px;
+  background-color: var(--third-color);
+  transition: 0.4s;
+}
+
+/* Index Start */
+/* Header Start */
+header {
+  position: sticky;
+  top: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 999;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--sixth-color);
+}
+.logo h2 {
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  font-size: 32px;
+  padding: 18px;
+}
+.header-content ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-content ul li a {
+  padding: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--seventh-color);
+  position: relative;
+}
+.header-content ul li a:hover {
+  color: var(--secondary-color);
+}
+.active::before {
+  content: "";
+  position: absolute;
+  top: 85%;
+  left: 12px;
+  width: 40%;
+  height: 2px;
+  background-color: var(--third-color);
+  transition: 0.4s;
+}
+.header-content > ul > li > a::after {
+  content: "";
+  position: absolute;
+  top: 85%;
+  left: 12px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--third-color);
+  transition: 0.4s;
+}
+.header-content > ul > li:hover > a::after {
+  width: 35%;
+}
+.mobile-content ul li a {
+  padding: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--seventh-color);
+  position: relative;
+}
+.mobile-content ul li a:hover {
+  color: var(--secondary-color);
+}
+.social-icon ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.social-icon ul li a i {
+  padding: 5px;
+  font-size: 18px;
+  color: var(--forth-color);
+}
+.social-icon ul li a i:hover {
+  color: var(--third-color);
+}
+#toggle-icon {
+  display: none;
+}
+#myLinks {
+  width: 200px;
+  background-color: var(--primary-color);
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  color: var(--secondary-color);
+  display: none;
+  justify-content: space-between;
+  padding: 10px;
+}
+#myLinks a {
+  color: var(--secondary-color);
+}
+/* Header End */
+
+/* Banner Start */
+.banner {
+  background-image: url("../image/banner-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  top: 50%;
+  z-index: 999;
+}
+.banner h2 {
+  text-align: center;
+  color: var(--seventh-color);
+}
+.banner-btn {
+  text-align: center;
+}
+.button-btn {
+  display: inline-block;
+  font-size: 14px;
+  padding: 14px 40px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  background-color: var(--third-color);
+  color: var(--primary-color);
+  margin-top: 20px;
+}
+.about-btn:hover {
+  background-color: var(--eight-color);
+  color: var(--primary-color);
+}
+/* Banner end */
+
+/* Footer Start */
+.footer {
+  background-color: #e9e8e6;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 14px;
+  padding: 30px;
+}
+.designed span {
+  color: var(--third-color);
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--third-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 11px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+#myBtn:hover {
+  background-color: var(--eight-color);
+  color: var(--primary-color);
+}
+/* Footer End */

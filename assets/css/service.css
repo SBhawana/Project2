@@ -1,0 +1,78 @@
+.card-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  width: 33%;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+  padding: 34px 17px;
+}
+.card .shape {
+  margin-top: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 150px 55px 98px 67px;
+  background-color: #f5f5f5;
+  font-size: 45px !important;
+  margin-left: 110px;
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
+.card i {
+  font-size: 34px;
+  margin-top: -90px;
+  margin-left: 13%;
+  position: absolute;
+}
+.card h5 {
+  font-size: 22px;
+  text-align: center;
+}
+.card p {
+  margin-top: 20px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 0;
+  margin-left: 0;
+  display: inline-block;
+  margin-right: 0;
+}
+.next-card {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.icon-1 {
+  color: blue;
+}
+.icon-3 {
+  color: deeppink;
+}
+.icon-4 {
+  color: orange;
+}
+.icon-5 {
+  color: red;
+}
+.icon-6 {
+  color: aqua;
+}
+.card:hover i {
+  color: var(--primary-color);
+}
+.card-1:hover .shape {
+  background-color: blue;
+}
+.card-2:hover .shape {
+  background-color: orange;
+}
+.card-3:hover .shape {
+  background-color: deeppink;
+}
+.card-5:hover .shape {
+  background-color: red;
+}
+.card-6:hover .shape {
+  background-color: aqua;
+}
